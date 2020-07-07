@@ -1,12 +1,14 @@
-
+import java.util.List;
 
 public class Main {
+
+	
 
 	public static void main(String[] args) {
 
 		//fill your code here
 		TravelAgency travelAgency = new TravelAgency();
-		travelAgency.generatePackageCost("VarshTourPackageDetails.txt");
+		List<Package> packages = travelAgency.generatePackageCost("VarshTourPackageDetails.txt");
 
 	}
 

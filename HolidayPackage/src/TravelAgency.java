@@ -78,7 +78,8 @@ public class TravelAgency {
 	
 	
 	public List<Package> findPackagesWithMinimumNumberOfDays() {
-		
+		List<Package> packages = new ArrayList<>();
 		// Fill you code Here
+		return packages;
 	}
 }

@@ -61,7 +61,7 @@ public class Package {
 		}
 		
 		double gst = (packageCost - discount) * 0.12;
-		packageCost = packageCost - discount + gst;
+		setPackageCost(packageCost - discount + gst);
 		    
 		
 		
