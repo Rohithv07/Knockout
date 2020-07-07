@@ -45,9 +45,28 @@ public class Package {
 //write the required business logic methods as expected in the question description
 	public void calculatePackageCost() {
 		//fill your code here
+		double discount;
+		packageCost = basicFare * noOfDays;
+		if(noOfDays <= 5) {
+		    discount = packageCost;
+		}
+		else if(noOfDays > 5 && noOfDays <= 8) {
+		    discount = packageCost * (3 / 100);
+		}
+		else if(noOfDays > 8 && noOfDays <=10) {
+		    discount = packageCost * (5 / 100);
+		}
+		else{
+		    discount = packageCost * (7 / 100);
+		}
+		
+		double gst = (packageCost - discount) * 0.12;
+		packageCost = packageCost - discount + gst;
+		    
 		
 		
 	}
 	
 	
 }
+
