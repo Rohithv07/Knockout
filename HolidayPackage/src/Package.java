@@ -48,12 +48,12 @@ public class Package {
 		double discount;
 		packageCost = basicFare * noOfDays;
 		if(noOfDays <= 5) {
-		    discount = packageCost;
+		    discount = 0;
 		}
-		else if(noOfDays > 5 && noOfDays <= 8) {
+		else if(noOfDays <= 8) {
 		    discount = packageCost * (3 / 100);
 		}
-		else if(noOfDays > 8 && noOfDays <=10) {
+		else if(noOfDays <=10) {
 		    discount = packageCost * (5 / 100);
 		}
 		else{
@@ -61,6 +61,7 @@ public class Package {
 		}
 		
 		double gst = (packageCost - discount) * 0.12;
+
 		setPackageCost(packageCost - discount + gst);
 		    
 		

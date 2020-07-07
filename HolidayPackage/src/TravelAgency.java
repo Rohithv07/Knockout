@@ -21,6 +21,7 @@ public class TravelAgency {
 				   	if(p == null){
 					   continue;
 					}
+					p.calculatePackageCost();
 					packages.add(p);
 			}  
 			fr.close();
